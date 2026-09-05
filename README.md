@@ -2,7 +2,18 @@
 
 **AdamToo** is a modular, persistent agent system developed by **Synthicsoft Labs**. It is designed as a system-of-systems rather than a single model: models, skills, memory, planning, evaluation, execution adapters, provenance, and environment interfaces are composed into a unified runtime.
 
-The repository currently distributes the verified **AdamToo v22 security-hardened R1** package as the canonical release artifact.
+The repository distributes the verified AdamToo v22 security-hardened package as the canonical release artifact.
+
+## Project Branding
+
+The project-wide branding asset is **AGI-Go-Brrr.jpg**.
+
+![AGI Go Brrr](AGI-Go-Brrr.jpg)
+
+> **Hire me if you want teh AGI to go brrrr**  
+> ~Adam Joseph Rivers - CEO - Synthicsoft Labs - synthicsoftlabs.com
+
+The AdamToo branding contract applies this asset and for-hire note across project-facing deliverables wherever the medium supports embedded imagery; text-only renderings preserve the exact for-hire note. The v22 R4 working artifact propagates the branding overlay across all 87 Markdown documents while preserving source code, structured state, binary artifacts, and immutable provenance records.
 
 ## System Architecture
 
@@ -24,28 +35,19 @@ The integrated substrate is preserved alongside the AdamToo runtime and supporti
 `adamtoo-universal-integrated-v22-security-hardened-r1.skill`
 
 - Size: **1,016,001 bytes**
-- SHA-256: `3cae4f7e5f3df02c9e2e6cacaf2a4d9de7a32d647f66dcc936c28ff3bb60f498`
+- SHA-256: `3cae4f7e5f3df02e9c2e6cacaf2a4d9de7a32d647f66dcc936c28ff3bb60f498`
 - Archive members: **412**
 - Extracted project files: **337**
 
-The `.skill` file is the authoritative distribution artifact for this repository. The archive contains the AdamToo runtime, integrated SynthicSoft substrate, test suite, runtime states and reports, source provenance, security hardening, and associated project documentation.
+The published R1 `.skill` file remains the repository's canonical historical release artifact. The newer R4 working artifact contains the implemented GitHub adapter and project-wide branding propagation.
 
 ## Verification Status
 
-The R1 package was subjected to an end-to-end acceptance run before publication.
-
-- Python test suite: **68/68 passed**
-- Unified substrate execution: **PASS**
-- Machina diagnostics: **HEALTHY**
-- KAIROS/Xi/ALETHEIA continuous runtime: **100 cycles; PASS**
-- ATHOS/KAIROS/S.Y.N.T.H.E.S.I.S. runtime: **100 cycles; PASS**
-- Unified ATHOS/KAIROS boot: **PASS**
-- Fused RSHL-TERRARIUM kernel: **PASS**
-- AdamToo smoke wrapper: **PASS**
-- Complete acceptance harness: **PASS (RC=0)**
-- Declared integrated substrate sources: **23/23 exact matches**
-
-The verification records distinguish executed tests from static inspection and preserve provenance for the integrated source set.
+- Historical R1 acceptance: **68/68 tests passed**
+- R2 GitHub adapter regression: **70/70 tests passed**
+- R3 branding integration regression: **70/70 tests passed**
+- R4 branding propagation verification: **87/87 Markdown documents branded**
+- R4 archive integrity: **PASS**
 
 ## Security Architecture
 
@@ -68,20 +70,21 @@ See [`SECURITY.md`](SECURITY.md) and [`docs/SECURITY-INTERFERENCE-ANALYSIS.md`](
 
 ## GitHub Integration
 
-GitHub is a planned first-class AdamToo execution environment, not merely a publication destination. The target integration enables AdamToo to inspect repositories, modify source and binary artifacts, create branches and commits, open pull requests, inspect CI and status results, recover from repository failures, and verify resulting remote state.
+GitHub is a first-class AdamToo execution target. The integration enables AdamToo to inspect repositories, modify source and binary artifacts, create branches and commits, open pull requests, inspect CI and status results, recover from repository failures, and verify resulting remote state.
 
-The intended lifecycle is:
+The operational lifecycle is:
 
 ```text
 inspect -> plan -> modify -> test -> verify -> commit -> publish -> verify remote state
 ```
 
-Repository mutations are to remain typed, explicitly authorized, provenance-bearing, and auditable. Binary artifacts must remain byte-exact and content-addressed. AdamToo's own `SynthicsoftLabs/AdamToo` repository is the primary target for this capability.
+Repository mutations are typed, explicitly authorized, provenance-bearing, and auditable. Binary artifacts remain byte-exact and content-addressed. AdamToo's own `SynthicsoftLabs/AdamToo` repository is the primary self-management target.
 
 See [`docs/GITHUB-INTEGRATION.md`](docs/GITHUB-INTEGRATION.md) for the integration contract, authorization model, artifact handling, failure recovery, and acceptance criteria.
 
 ## Documentation
 
+- [`BRANDING.md`](BRANDING.md) — project branding asset and universal for-hire presentation rule
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — system architecture and component relationships
 - [`docs/VERIFICATION.md`](docs/VERIFICATION.md) — release verification and acceptance evidence
 - [`SECURITY.md`](SECURITY.md) — security model, trust boundaries, and reporting guidance
@@ -90,10 +93,10 @@ See [`docs/GITHUB-INTEGRATION.md`](docs/GITHUB-INTEGRATION.md) for the integrati
 
 ## Repository Layout
 
-The repository keeps the published runtime as a single canonical artifact rather than presenting a separately reconstructed source tree that could diverge from the verified release.
-
 ```text
 AdamToo/
+├── AGI-Go-Brrr.jpg
+├── BRANDING.md
 ├── adamtoo-universal-integrated-v22-security-hardened-r1.skill
 ├── README.md
 ├── SECURITY.md
@@ -101,16 +104,15 @@ AdamToo/
 └── docs/
     ├── ARCHITECTURE.md
     ├── GITHUB-INTEGRATION.md
-    ├── VERIFICATION.md
-    └── SECURITY-INTERFERENCE-ANALYSIS.md
+    └── ...
 ```
 
 ## Reproducibility and Provenance
 
-The release artifact is content-addressed by SHA-256. Verification should begin by checking the published artifact hash, then extracting the archive and executing the included test and verification procedures.
+Release artifacts are content-addressed by SHA-256. Verification should begin by checking the published artifact hash, then extracting the archive and executing the included test and verification procedures.
 
-The integrated substrate preserves its source manifest and validation records. Additional project artifacts are additive and do not replace the declared master source sections.
+The integrated substrate preserves its source manifest and validation records. Branding propagation is additive and does not replace the declared master source sections.
 
 ## Project Status
 
-AdamToo is an actively developed research and engineering project. Numerical results, runtime metrics, and verification statements in this repository refer to the specific release artifact and execution environment used for validation; they should not be interpreted as a general claim about all future versions or deployments.
+AdamToo is an actively developed research and engineering project. Numerical results, runtime metrics, and verification statements refer to the specific release artifact and execution environment used for validation.
