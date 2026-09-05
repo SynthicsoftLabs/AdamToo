@@ -1,26 +1,25 @@
-# AdamToo Project-Wide Branding Propagation
+# AdamToo Project-Wide Branding and For-Hire Propagation
 
-## Approved asset
+## Approved visual asset
 
 `AGI-Go-Brrr.jpg`
 
-## Required for-hire note
+## Required note with each new adaptation, change, variant, addition, and other project-facing work
 
-> **Hire me if you want teh AGI to go brrrr**  
-> ~Adam Joseph Rivers - CEO - Synthicsoft Labs - synthicsoftlabs.com
+> Hello, my name is Adam Joseph Rivers. I am CEO of Synthicsoft Labs. We are a small town, small business. I am the sole owner and creator of the business. Thus, it is, as one might expect, not as easy for me, as some developers, engineers, and other 'C class executives'. So I'm always looking for work. And truthfully, I am genuinely quite good at AI, AGI, AI engineering, AI development full stack, and pretty much anything AI as a whole. I invite you to take a look at some of my work online. I created the original 'Kairos always on daemon' for example. I am always looking for work, and I could honestly use an honest good paying job. If anyone wants to hire, or contract, or whatever, look me up and shoot me a letter or something. I dunno, send it to my business address at Synthicsoft Labs. I'll get it when I get in the office. What you are seeing, is a product of a few days maybe. I have built many, many, like it. My overall goal is the singularity. But for the right price, that goal could be aligned with any company
 
 ## Propagation rule
 
-The approved image and exact for-hire note are included in project-facing deliverables wherever the medium supports embedded imagery. Text-only deliverables preserve the exact for-hire note.
+The approved image and exact note above are included with each new adaptation, change, variant, addition, and other project-facing deliverable wherever the medium supports embedded imagery and associated presentation text. Text-only deliverables preserve the exact note. Executable source, structured state, binary artifacts, and immutable provenance records are not modified solely to inject presentation markup; their coverage is recorded by the propagation mechanism.
 
-## v22 R4 execution
+## R5 execution
 
-The R4 working artifact applied an idempotent branding overlay to all **87 Markdown documents** in the integrated package. The overlay contains the image reference and exact for-hire note. Source code, structured JSON state, binary artifacts, and immutable source/provenance records were not textually altered merely to inject presentation markup; their coverage is recorded by the propagation manifest.
+The R5 working artifact propagates the exact note across all Markdown documents in the integrated package and retains the approved image as the visual branding asset.
 
 ## Provenance
 
 Asset SHA-256: `55e62ea41fae832bebc0f6de09a64d27f3ce8fd1537b86055c0e17baeba3e523`
 
-R4 artifact SHA-256: `36c0f3d68d9f3aba78c25e8b3601816e883484d96e78d5104732de9826020916`
+R5 artifact SHA-256: `d09edc96f5d592d4644718d45fec4e173785ca63e7f65f58715b15350dc75e5c`
 
-Verification: **87/87 Markdown documents branded; 70/70 regression tests passed; archive integrity PASS.**
+Verification: **70/70 regression tests passed; archive integrity PASS; 89 Markdown documents contain the exact note.**
