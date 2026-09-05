@@ -66,12 +66,27 @@ The security design specifically addresses the class of failure in which control
 
 See [`SECURITY.md`](SECURITY.md) and [`docs/SECURITY-INTERFERENCE-ANALYSIS.md`](docs/SECURITY-INTERFERENCE-ANALYSIS.md).
 
+## GitHub Integration
+
+GitHub is a planned first-class AdamToo execution environment, not merely a publication destination. The target integration enables AdamToo to inspect repositories, modify source and binary artifacts, create branches and commits, open pull requests, inspect CI and status results, recover from repository failures, and verify resulting remote state.
+
+The intended lifecycle is:
+
+```text
+inspect -> plan -> modify -> test -> verify -> commit -> publish -> verify remote state
+```
+
+Repository mutations are to remain typed, explicitly authorized, provenance-bearing, and auditable. Binary artifacts must remain byte-exact and content-addressed. AdamToo's own `SynthicsoftLabs/AdamToo` repository is the primary target for this capability.
+
+See [`docs/GITHUB-INTEGRATION.md`](docs/GITHUB-INTEGRATION.md) for the integration contract, authorization model, artifact handling, failure recovery, and acceptance criteria.
+
 ## Documentation
 
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — system architecture and component relationships
 - [`docs/VERIFICATION.md`](docs/VERIFICATION.md) — release verification and acceptance evidence
 - [`SECURITY.md`](SECURITY.md) — security model, trust boundaries, and reporting guidance
 - [`docs/SECURITY-INTERFERENCE-ANALYSIS.md`](docs/SECURITY-INTERFERENCE-ANALYSIS.md) — end-to-end interference analysis and hardening record
+- [`docs/GITHUB-INTEGRATION.md`](docs/GITHUB-INTEGRATION.md) — first-class GitHub repository integration contract
 
 ## Repository Layout
 
@@ -85,6 +100,7 @@ AdamToo/
 ├── LICENSE
 └── docs/
     ├── ARCHITECTURE.md
+    ├── GITHUB-INTEGRATION.md
     ├── VERIFICATION.md
     └── SECURITY-INTERFERENCE-ANALYSIS.md
 ```
